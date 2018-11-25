@@ -12,30 +12,33 @@
                 <h1 class="user__title">To log into the Booking System please complete the form below.</h1><br><br>
                 <a href="<?php echo site_url('Home/menuform');?>" class="user__title"/><p>Back to menu</p></a>
             </header>
-
-            <form class="form">
+            <?php echo form_open('Home/AddEntry'); ?>
+            <form class="form" method="post">
                 <div class="form__group">
-                    <input type="text" name="knumber" placeholder="KNUMBER" class="form__input"/>
+                    <?php echo form_error('knumber'); ?>
+                    <input type="text" name="knumber" value="<?php echo set_value('knumber'); ?>" placeholder="KNUMBER" class="form__input"/>
                 </div>
                 <div class="form__group">
-                    <input type="text" name="name" placeholder="FULL NAME" class="form__input"/>
+                    <input type="text" name="name" value="<?php echo set_value('name'); ?>" placeholder="FULL NAME" class="form__input"/>
                 </div>
                 <div class="form__group">
-                    <input type="text" name="email" placeholder="EMAIL" class="form__input"/>
+                    <input type="text" name="email" value="<?php echo set_value('email'); ?>" placeholder="EMAIL" class="form__input"/>
                 </div>
                 <div class="form__group">
-                    <input type="text" name="phone_no" placeholder="CONTACT NUMBER" class="form__input"/>
+                    <input type="text" name="phone_no" value="<?php echo set_value('phone_no'); ?>" placeholder="CONTACT NUMBER" class="form__input"/>
                 </div>
                 <div class="form__group">
-                    <input type="text" name="password" placeholder="PASSWORD" class="form__input"/>
+                    <?php echo form_error('password'); ?>
+                    <input type="text" name="password" value="<?php echo set_value('password'); ?>" placeholder="PASSWORD" class="form__input"/>
                 </div>
                 <div class="form__group">
-                    <input type="text" name="password_confirm" placeholder="CONFIRM PASSWORD" class="form__input"/>
+                    <?php echo form_error('password_confirm'); ?>
+                    <input type="text" name="password_confirm" value="<?php echo set_value('password_confirm'); ?>" placeholder="CONFIRM PASSWORD" class="form__input"/>
                 </div>
                 <div class="form__group">
-                    <input type="file" name="userImg" placeholder="PROFILE IMAGE" class="form__input"/>
+                    <input type="file" name="userImg" value="<?php echo set_value('userImg'); ?>" placeholder="PROFILE IMAGE" class="form__input"/>
                 </div>
-                <button class="btn" type="button">Login</button>
+                <input type="submit" value="Sign Up" class="btn"/>
             </form>
         </div>
         

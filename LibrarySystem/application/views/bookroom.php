@@ -23,15 +23,13 @@
                     </select>
                 </div>
                 <div class="form__group">
-
-                    
-<!--                    <select name="roomDate" size="1" class="form__input">
-    <option>Monday 05 November</option>
-    <option>Tuesday 06 November</option>
-    <option>Wednesday 07 November</option>
-    <option>Thursday 08 November</option>
-    <option>Friday 09 November</option>
-</select>-->
+                    <select name="roomDate" size="1" class="form__input">
+                        <option>Monday 05 November</option>
+                        <option>Tuesday 06 November</option>
+                        <option>Wednesday 07 November</option>
+                        <option>Thursday 08 November</option>
+                        <option>Friday 09 November</option>
+                    </select>
                 </div>
                 <div class="form__group">
                     <select name="roomTime" size="1" class="form__input">
